@@ -12,7 +12,6 @@ export const Container = styled.article`
   background: #ffffff;
   box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
   border-radius: 10px;
-  /* overflow: hidden; */
   font-family: inherit;
   @media (min-width: 780px) {
     display: flex;
@@ -24,15 +23,9 @@ export const Container = styled.article`
 
 export const Logo = styled.img`
   @media (min-width: 780px) {
-    /* width: 12px; */
     height: 12px;
     display: block;
   }
-  /* height: 37px;
-  width: 37px; */
-  /* object-fit: contain; */
-  /* background-size: contain; */
-  /* width: 100%; */
 `;
 
 export const Layout = styled.div`
@@ -41,7 +34,6 @@ export const Layout = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   height: 100%;
-  /* padding: 0 32px; */
   font-family: inherit;
   @media (min-width: 780px) {
     justify-content: normal;
@@ -66,7 +58,6 @@ export const Title = styled.h2`
 `;
 
 export const CardFooter = styled.div<AvatarContainerProps>`
-  /* border: 1px solid red; */
   width: 100%;
   height: 44px;
   display: flex;
@@ -77,15 +68,9 @@ export const CardFooter = styled.div<AvatarContainerProps>`
   padding: 8px 0px;
   border-radius: 0px 0px 10px 10px;
   @media (min-width: 780px) {
-    /* background-color: plum; */
     background-color: #ffffff;
     white-space: nowrap;
-    /* justify-content: unset; */
-    /* flex: 1 1 2; */
-    /* justify-content: space-around; */
-    /* column-gap: ${(props) => (props.active ? "0px" : "170px")}; */
     justify-content: ${(props) => (props.active ? "unset" : "space-between")};
-    /* flex: ${(props) => (props.active ? "5px 5px 5px" : "5px 10px 20px")}; */
   }
 `;
 
@@ -188,7 +173,6 @@ export const ShareComponent = styled.section<AvatarContainerProps>`
     position: relative;
     top: -50px;
     left: 33.4%;
-    /* z-index: 99999; */
     border-radius: 5px;
     padding: 5px 18px;
     p {
@@ -201,7 +185,6 @@ export const ShareComponent = styled.section<AvatarContainerProps>`
       border-top: solid 7.5px #48556a;
       transform: translateX(-50%);
       position: absolute;
-      /* z-index: -1; */
       content: "";
       top: 100%;
       left: 50%;
@@ -219,7 +202,6 @@ export const ActiveContainer = styled.div`
   justify-content: center;
   border-radius: 50%;
   overflow: hidden;
-  /* background-color: #ecf2f8; */
   background-color: #48556a;
   @media (min-width: 780px) {
     width: 16px;

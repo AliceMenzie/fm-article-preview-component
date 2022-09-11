@@ -80,7 +80,7 @@ const PreviewCard: React.FC<PreviewCardProps> = ({
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Logo src={facebookLogo} />
+                    <Logo src={facebookLogo} alt="facebook" />
                   </a>
                 </ActiveContainer>
                 <ActiveContainer>
@@ -89,7 +89,7 @@ const PreviewCard: React.FC<PreviewCardProps> = ({
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Logo src={twitterLogo} />
+                    <Logo src={twitterLogo} alt="twitter" />
                   </a>
                 </ActiveContainer>
                 <ActiveContainer>
@@ -98,7 +98,7 @@ const PreviewCard: React.FC<PreviewCardProps> = ({
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Logo src={pinterestLogo} />
+                    <Logo src={pinterestLogo} alt="pinterest" />
                   </a>
                 </ActiveContainer>
               </ShareComponent>
