@@ -66,7 +66,7 @@ const PreviewCard: React.FC<PreviewCardProps> = ({
         <Summary>{summary}</Summary>
         <CardFooter active={active}>
           <AvatarContainer active={active}>
-            <Avatar src={avatar} active={active} />
+            <Avatar src={avatar} alt={author} active={active} />
             <AvatarInfo active={active}>
               <ContentP>{author}</ContentP>
               <ContentS>{date}</ContentS>
