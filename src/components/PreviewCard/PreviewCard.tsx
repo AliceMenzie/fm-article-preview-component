@@ -41,6 +41,13 @@ export const Image = styled.img`
     width: 40%;
     border-radius: 10px 0px 0px 10px;
   }
+  @-moz-document url-prefix() {
+    @media (min-width: 780px) {
+      height: 280px;
+      width: 100%;
+      border-radius: 10px 0px 0px 10px;
+    }
+  }
 `;
 
 const PreviewCard: React.FC<PreviewCardProps> = ({
