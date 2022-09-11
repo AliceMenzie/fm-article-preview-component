@@ -41,7 +41,7 @@ export const Layout = styled.div`
   }
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h1`
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
