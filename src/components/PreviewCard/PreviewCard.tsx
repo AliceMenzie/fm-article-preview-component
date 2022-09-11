@@ -105,7 +105,7 @@ const PreviewCard: React.FC<PreviewCardProps> = ({
             )}
           </AvatarContainer>
           <LogoContainer active={active} onClick={() => setActive(!active)}>
-            <Logo src={shareLogo} />
+            <Logo src={shareLogo} alt="share" />
           </LogoContainer>
         </CardFooter>
       </Layout>
