@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const StyledApp = styled.div`
+const StyledApp = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
