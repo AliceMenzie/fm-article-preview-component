@@ -23,7 +23,6 @@ import {
   ShareComponent,
   ActiveContainer,
 } from "./PreviewCard.styles";
-import ShareToggle from "../ShareToggle/ShareToggle";
 
 interface PreviewCardProps {
   title: string;
@@ -54,25 +53,20 @@ const PreviewCard: React.FC<PreviewCardProps> = ({
 
   return (
     <Container>
-      <Image src={logo} alt="chair" />
+      <Image src={logo} alt="green chest of draws with flowers" />
       <Layout>
         <Title>{title}</Title>
         <Summary>{summary}</Summary>
         <CardFooter active={active}>
           <AvatarContainer active={active}>
-            {/* {!active && (
-              <> */}
             <Avatar src={avatar} active={active} />
             <AvatarInfo active={active}>
               <ContentP>{author}</ContentP>
               <ContentS>{date}</ContentS>
             </AvatarInfo>
-            {/* </>
-            )} */}
             {active && (
               <ShareComponent active={active}>
                 <p>Share</p>
-                {/* <AvatarInfo> */}
                 <ActiveContainer>
                   <a
                     href="https://www.facebook.com/"
@@ -100,12 +94,10 @@ const PreviewCard: React.FC<PreviewCardProps> = ({
                     <Logo src={pinterestLogo} />
                   </a>
                 </ActiveContainer>
-                {/* </AvatarInfo> */}
               </ShareComponent>
             )}
           </AvatarContainer>
           <LogoContainer active={active} onClick={() => setActive(!active)}>
-            {/* {active && <ShareToggle />} */}
             <Logo src={shareLogo} />
           </LogoContainer>
         </CardFooter>
